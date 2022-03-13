@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <video src="00extras/background.mp4" height="300" autoplay muted controls loop>
+            <!-- 
+                autoplay:otomatik oynatır
+                contros: video kontrol panelini gösterir
+                loop:sürekli videonun baştan başlamasını sağlar
+                muted:sesiz çalıştıtır
+
+                eğer chrome da autoplay yapmak istiyor isek
+                muted başlamamız gerek
+            -->
+        </video><br>
+
+        <!-- Eğer her tarayıcıda çalışmasını istiyorsanız -->
+        <video width="320" height="240" controls>
+            <source src="./video/clip.mp4" type="video/mp4">
+            <source src="./video/clip.ogg" type="video/ogg">
+            <source src="./video/clip.webm" type="video/webm">
+        </video><br>
+
+        <!-- video player özellikleri -->
+        • src: Video adresi.<br>
+        • height: Video genişliği.<br>
+        • width: Video yüksekliği.<br>
+        • autoplay: Sayfa açıldığında video oynamaya başlar.<br>
+        • controls: Kontrol düğmelerinin görünmesini sağlar.<br>
+        • loop: Videonun sürekli oynamasını sağlar.<br>
+        • preload: Play düğmesine basmadan, sayfa açıldığında video indirilmeye
+        başlanır.<br>
+        • muted: Videonun sesi kısılmış halde başlamasını sağlar.<br>
+
+    </body>
+</html>

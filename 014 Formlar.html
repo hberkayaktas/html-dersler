@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!-- form kullanıcıdan veri çekmeye yarayan kısım -->
+        <!-- action verilerin yollanacağı sayfa-->
+        <!-- method get veya post olabilir get verileri açıtan yollar
+        post şifrelenmiş şekilde -->
+        <form name=" kayit" action=" kayit.php" method="GET">
+            <!-- input kullanıcı gişi bölümleri-->
+            <!-- type veri giriş tipi -->
+            Ad Soyad: <input type="text" name="adsoyad" required>
+            <br>
+            <!-- submit yollama butonu -->
+            <input type="submit">
+        </form>
+
+
+        <form name="kayit" action="kayit.php" method="GET">
+            Ad Soyad:
+            <input type="text" name="adsoyad" id="idadsoyad"
+            size="20" maxlength="30" required>
+            <!-- size text boxun kaç karakterlik olacak şekilde görünecek olması
+            max lenght maksimum kullanıcıdan alınıcak karakter sınırı-->
+            <!-- required veri girişinin zorunlu olduğu yer -->
+            <br>
+            <input type="submit">
+        </form>
+        
+        <form name="test" action="alan.php" method="get">
+            Ad Soyad:
+             <input type="text" name="adsoyad"required><br>
+             <input type="submit" value="Gönder">
+             <!-- reset tüm formu sıfırlar -->
+             <input type="reset" value="İptal">
+         </form>
+
+        <form name="email" action="mail.php" method="get">
+            Ad:<input type="text" name="ad"required><br>
+            Soyad:<input type="text" name="soyad"required><br>
+            <!-- email kullanıcıdan e mail ister -->
+            Email:<input type="email" name="email" required><br>
+            <!-- url kullanıcıdan url ister -->
+            Web:<input type="url" name="web"required><br>
+        </form>
+        
+
+    </body>
+</html>
